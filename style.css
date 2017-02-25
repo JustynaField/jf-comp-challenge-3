@@ -1,0 +1,228 @@
+html, body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body, li {
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: helvetica;
+}
+
+body {
+  display: flex;
+  margin: auto;
+  max-width: 1400px;
+}
+
+main {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  color: #a0a6af;
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+/*aside - primary nav*/
+.aside-nav {
+  background-color: #354052;
+  display: block;
+  height: 100%;
+  min-width: 180px;
+  max-width: 200px;
+}
+
+.profile-img, .main, .admin {
+  border-bottom: 2px solid #1b2028;
+}
+
+.profile-pic {
+  display: block;
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+h1 img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.arrow-icon {
+  width: 10px;
+  padding-left: 5px;
+}
+
+.primary-nav ul, h3 {
+  padding-left: 15px;
+}
+
+h3 {
+  color: #9298a0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.primary-nav li {
+  color: #a0a6af;
+  font-size: 12px;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.primary-nav li img {
+  margin-right: 10px;
+  vertical-align: -10%;
+  width: 13px;
+}
+
+.categories li {
+  text-transform: none;
+}
+
+
+/*main content*/
+
+main {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+/*top nav*/
+.top-nav {
+  border-bottom: 2px solid #bdc2c9;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  margin: 0;
+  min-width: 100%;
+}
+
+.hamburger-icon {
+  border-right: 2px solid #bdc2c9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+}
+
+.hamburger-icon:hover {
+  background-color: #17a5f9;
+  cursor: pointer;
+}
+
+.hamburger {
+  margin-right: 15px;
+  width: 30px;
+}
+
+.input-field {
+  display: flex;
+  flex: 10 5 300px;
+}
+
+input {
+  justify-content:  flex-start;
+  border: none;
+  flex: 10 5 300px;
+  min-width: 400px;
+  padding-left: 20px;
+}
+
+input:focus {
+  outline: 2px solid #bdc2c9;
+}
+
+input:hover {
+  border: 2px solid #bdc2c9;
+  cursor: text;
+}
+
+.nav-icon {
+  border-left: 2px solid #bdc2c9;
+  display: flex;
+  min-width: 60px;
+  right: 0;
+}
+
+.nav-icon:hover {
+  background-color: #17a5f9;
+  cursor: pointer;
+}
+
+.main-nav-icon {
+  margin-left: 30%;
+  width: 20px;
+}
+
+
+/*job offer*/
+
+/*job offer - header*/
+
+.offer-header {
+  padding: 40px;
+}
+
+.job-title {
+  width: 60%;
+}
+
+.job-title p {
+  display: inline;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.location p {
+  margin: 20px 0;
+}
+
+.location-icon {
+  width: 12px;
+}
+
+.location-link {
+  color: #17a5f9;
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+.location-link:hover {
+  font-weight: 600;
+}
+
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer-header-btns {
+  width: 30%;
+}
+
+
+.offer-nav li {
+  display: inline;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-right: 30px;
+}
