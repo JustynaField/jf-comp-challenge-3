@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
@@ -10,13 +11,13 @@
   <body>
 
     <aside class="aside-nav">
+
+      <div class='profile-img'>
+        <h1 class="profile-pic"><img src='images/profile.png' alt="professional picture of Newton Barley"></h1>
+        <h1>Newton Barley<img class="arrow-icon" src="icons/down-arrow.svg" aria-hidden="true"/></h1>
+      </div>
+
       <nav class="primary-nav">
-
-        <div class='profile-img'>
-          <h1 class="profile-pic"><img src='images/profile.png' alt="professional picture of Newton Barley"></h1>
-          <h1>Newton Barley<img class="arrow-icon" src="icons/down-arrow.svg" aria-hidden="true"/></h1>
-        </div>
-
         <div class='main'>
           <h3>Main</h3>
           <ul>
@@ -62,7 +63,7 @@
         </div>
 
         <div class="input-field">
-          <input type="search" placeholder="Search for a job, task or resume">
+          <input class="main-search" type="search" placeholder="Search for a job, task or resume">
         </div>
 
         <div class="nav-icon"><img class="main-nav-icon" src="icons/user.svg" aria-hidden="true"/></div>
@@ -74,6 +75,7 @@
     <section class="job-offer">
 
       <header class="offer-header">
+
         <div class="header-container">
           <div class="job-title">
             <h2 class="title">Customer Service Representative</h2>
@@ -82,45 +84,120 @@
           </div>
 
           <div class="offer-header-btns">
-            <button>open</button>
-            <button></button>
-            <button></button>
-            <button></button>
+            <button class="open-btn"><img class="green-circle-icon" src="icons/green-circle.svg" aria-hidden="true">open</button>
+            <button class="header-icon"><img class="green-circle-icon" src="icons/bookmark.svg" aria-hidden="true"></button>
+            <button class="header-icon"><img class="green-circle-icon" src="icons/pen.svg" aria-hidden="true"></button>
+            <button class="header-icon"><img class="green-circle-icon" src="icons/museum.svg" aria-hidden="true"></button>
           </div>
 
         </div>
 
-        <!-- <nav class='tertiary-nav'>
+        <nav class='tertiary-nav'>
           <ul class='offer-nav'>
-            <li>summary</li>
-            <li>applications</li>
-            <li>job board</li>
-            <li>interviews</li>
-            <li>activity</li>
-            <li>broadcast</li>
-            <li>notifications</li>
+            <li><a href="">summary</a></li>
+            <li><a href="">applicants</a></li>
+            <li><a href="">job board</a></li>
+            <li><a href="">interviews</a></li>
+            <li><a href="">activity</a></li>
+            <li><a href="">broadcast</a></li>
+            <li><a href="">notifications</a></li>
           <ul>
-       </nav> -->
-    </header>
+        </nav>
+      </header>
 
 
 
-<!--
-    <section class='stats'>
-      <div class='totals'>
-        <div class='circle-graph'></div>
-        <div class='circle-graph'></div>
-        <div class='circle-graph'></div>
-        <p>totals Out of 5,231 views</p>
-      </div>
+      <section class="offer-details">
 
-      <div class='bar-chart'>
-        <p>applications/day</p>
-      </div>
+        <section class='stats'>
+          <div class="circle-graphs">
+            <div class='totals'>
+              <div class='circle-graph applicants'><p class="number">3,154</p><p class="text">applicants</p></div>
+              <div class='circle-graph interviews'><p class="number">1,546</p><p class="text">interviews</p></div>
+              <div class='circle-graph forwards'><p class="number">912</p><p class="text">forwards</p></div>
+            </div>
+            <button class="graph-btn circle-graph-btn">totals<span class="views-num"> - Out of 5,231 views</span></button>
+          </div>
 
-    </section> -->
+          <div class="graph">
+            <img src="images/graph.png" alt="Copy of a graph showing applications/day.">
+            <button class="graph-btn">applications/day</button>
+          </div>
+        </section>
 
-    </section>
+        <hr/>
+
+        <section class="job-description">
+          <section class="job-table">
+            <table>
+              <tr>
+                <th class="column1">job description</th>
+                <th class="column2"><button><img class="th-icon" src="icons/white-pencil.svg" aria-hidden="true">edit</button></th>
+              </tr>
+              <tr>
+                <td class="column1">position title</td>
+                <td class="column2">Customer Service Representative</td>
+              </tr>
+              <tr>
+                <td class="column1">location</td>
+                <td class="column2">San Francisco, CA</td>
+              </tr>
+              <tr>
+                <td class="column1">employment type</td>
+                <td class="column2">full time</td>
+              </tr>
+              <tr>
+                <td class="column1">status</td>
+                <td class="column2">open</td>
+              </tr>
+              <tr>
+                <td class="column1">description</td>
+                <td class="column2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed convallis ante. Ut tincidunt sapien nisl, ac ullamcorper nisl sagittis sodales. Ut vestibulum luctus ultrices. Quisque rutrum, justo non rutrum fringilla, nunc turpis interdum neque, gravida consectetur mauris elit quis lectus. Phasellus vehicula leo eu commodo porta. Integer porttitor fermentum risus, accumsan elementum risus maximus id. </td>
+              </tr>
+              <tr>
+                <td class="column1">Hiring Lead</td>
+                <td class="column2"><img class="lead-pic" src="images/tizzy.jpg" alt="professional picture of Tammy Tizzy, the hiring lead"><p class="lead-img">Tammy Tizzy</p></td>
+              </tr>
+              <tr>
+                <td class="column1">approved salary</td>
+                <td class="column2"><b>$58,000</b></td>
+              </tr>
+            </table>
+          </section>
+
+          <aside class="extra-links">
+            <button class="social facebook"><img src="icons/facebook-logo.svg" aria-hidden="true">Post to Facebook</button>
+            <button class="social twitter"><img src="icons/twitter-logo.svg" aria-hidden="true">Tweet this Job</button>
+            <button class="social linkedin"><img src="icons/linkedin-logo.svg" aria-hidden="true">Post to Linkedin</button>
+
+            <article>
+              <h4 class="link-title"><img src="icons/globe.svg" aria-hidden="true">Link to this Job</h4>
+              <p class="aside-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+              <div class="btn-container">
+                <input class="link-input" type="text" placeholder="http://loremipsum.com/kjhasdhkaskjad">
+                <button class="copy-btn">Copy</button>
+              </div>
+            </article>
+
+            <article>
+              <h4 class="link-title"><img src="icons/widget.svg" aria-hidden="true">Use the Button Widget</h4>
+              <p class="aside-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+              <div class="btn-container">
+                <input class="link-input" type="text" placeholder="<script type='text/javascript'>">
+                <button class="copy-btn">Copy</button>
+              </div>
+            </article>
+
+            <article>
+              <h4 class="link-title"><img src="icons/paper-plane.svg" aria-hidden="true">Upload Resumes by Email</h4>
+              <p class="aside-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+              <input class="link-input" type="text" placeholder="tammy.tizzy@gmail.com">
+            </article>
+
+          </aside>
+
+        </section>
+      </section>
 
     </main>
 
