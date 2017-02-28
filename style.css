@@ -37,7 +37,7 @@ ul {
   background-color: #354052;
   display: block;
   min-height: 100%;
-  min-width: 180px;
+  min-width: 180px;*/
   max-width: 200px;
 }
 
@@ -64,9 +64,10 @@ h1 img {
   padding-left: 5px;
 }
 
-.primary-nav ul, h3 {
+.primary-nav h3 {
   padding-left: 15px;
 }
+
 
 h3 {
   color: #9298a0;
@@ -78,7 +79,13 @@ h3 {
   color: #a0a6af;
   font-size: 12px;
   padding: 10px 0;
+  padding-left: 15px;
   text-transform: uppercase;
+}
+
+.primary-nav li:hover {
+  background-color: #30394a;
+  color: #fff;
 }
 
 .primary-nav li img {
@@ -130,15 +137,14 @@ main {
 
 .input-field {
   display: flex;
-  flex: 10 5 300px;
+  flex: 10 5 400px;
 }
 
 .main-search {
   border: none;
-  flex: 10 5 300px;
+  flex: 10 5 400px;
   font-family: 'Open Sans', sans-serif;
   justify-content:  flex-start;
-  min-width: 400px;
   padding-left: 20px;
 }
 
@@ -154,7 +160,7 @@ input:hover {
 .nav-icon {
   border-left: 2px solid #bdc2c9;
   display: flex;
-  min-width: 60px;
+  width: 60px;
   right: 0;
 }
 
@@ -166,6 +172,10 @@ input:hover {
 .main-nav-icon {
   margin-left: 33%;
   width: 20px;
+}
+
+.sm-screen-top-icon {
+  display: none;
 }
 
 
@@ -291,6 +301,7 @@ input:hover {
 
 .offer-details {
   background-color: #edf2f6;
+  min-height: 100vh;
   padding-bottom: 40px;
   padding-right: 25px;
 }
@@ -305,14 +316,15 @@ input:hover {
   align-items: center;
   display: flex;
   flex-direction: column;
-  flex: 10 5 400px;
+  flex: 5 10 400px;
   justify-content: space-around;
+  padding-bottom: 10px;
 }
 
 .totals {
   display: flex;
-  justify-content: space-around;;
-  /*flex-grow: 5;*/
+  justify-content: space-between;
+  flex-grow: 5;*/
   min-width: 400px;
   max-width: 550px;
   margin-right: 30px;
@@ -322,11 +334,11 @@ input:hover {
 .circle-graph {
   border: 10px solid #dae5e9;
   border-radius: 50%;
-  height: 100px;
+  height: 110px;
   margin-left: 20px;
   margin-top: 20px;
   text-align: center;
-  width: 100px;
+  width: 110px;
 }
 
 .applicants {
@@ -363,19 +375,18 @@ input:hover {
 
 .graph {
   /*display: inline-block;*/
-  display: flex;
-  flex: 5 5 400px;
   align-items: center;
+  display: flex;
+  flex: 5 5 290px;
   flex-direction: column;
-    justify-content: space-between;
-  /*margin: auto;
-  min-width: 400px;*/
+  justify-content: space-between;
+  margin: auto;
+  max-width: 70%;
 }
 
 .graph img {
   margin: auto;
-  /*justify-content: center;*/
-  width: 350px;
+  width: 100%;
 }
 
 .graph-btn {
@@ -424,6 +435,7 @@ hr {
 .job-table {
   margin-left: 25px;
   min-width: 470px;
+  min-width: 290px;
   max-width: 700px;
 }
 
@@ -581,24 +593,28 @@ th button:hover {
 
 .link-input {
   border:  1px solid #bdc2c9;
+  flex: 3 5 240px;
   height: 30px;
   margin: 4px 0;
-  text-overflow: ellipsis;
   padding-right: 10px;
-  width: 240px;
+  text-overflow: ellipsis;
 }
 
 .copy-btn {
   background-color: #41b8bf;
   border: none;
   color: white;
+  flex: 5 2 58px;
   font-size: 12px;
   height: 34px;
   margin: 4px 0;
   padding: 1px 2px 0 0;
-  width: 58px;
 }
 
+.no-copy {
+  width: 100%;
+  padding: 0;
+}
 
 @media screen and (max-width: 1050px) {
 
@@ -606,8 +622,181 @@ th button:hover {
     display: none;
   }
 
+  .show-more {
+    display: none;
+  }
+
+  .hamburger {
+    margin-right: 0;
+  }
+
+  .offer-header-btns {
+    min-width: 200px;
+  }
+
   /*.left-arrow-icon {
     display: none;
   }*/
+
+}
+
+@media screen and (max-width: 825px) {
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .circle-graphs {
+    justify-content: center;
+    flex:none;
+    padding: 0;
+  }
+
+  .circle-graph {
+    margin-top: 0;
+  }
+  .graph {
+    flex: 0;
+    margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width: 780px) {
+
+  .tertiary-nav {
+    margin-top: 30px;
+  }
+
+  .offer-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .job-description {
+    flex-direction: column;
+  }
+
+  .extra-links {
+    margin: auto;
+    margin-top: 30px;
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+
+  .offer-header {
+    padding-top: 5px;
+  }
+
+  .header-container {
+    flex-direction: column;
+  }
+
+  .job-title {
+    flex: none;
+    margin: 15px 0;
+  }
+
+  .title {
+    margin-bottom: 5px;
+
+  }
+
+  .graph {
+    /*padding: 15px 20px 0 20px;*/
+    /*max-width: 50%;*/
+  }
+
+  .offer-details {
+    padding-right: 0;
+  }
+
+  .job-table {
+    margin: 0;
+    margin: auto;
+    padding: 0 10px;
+  }
+
+  .offer-nav a:hover {
+    padding-bottom: 2px;
+  }
+
+  .graph {
+    max-width: 75%;
+  }
+
+}
+
+@media screen and (max-width: 540px) {
+
+  .main-search {
+    text-overflow: ellipsis;
+    padding-right: 25px;
+  }
+
+.nav-icon {
+    display:none;
+  }
+
+.wrapper {
+  height: 45px;
+}
+  .sm-screen-top-icon {
+    display: flex;
+    height: 45px;
+    float: right;
+    width: 120px;
+  }
+
+  /*clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }*/
+
+  .main-nav-icon{
+    margin: 0 10px;
+    left: 0;
+    width: 1.1em;
+  }
+
+  .main-nav-icon:hover {
+    width: 1.5em;
+  }
+
+  .main-nav-icon:hover {
+    fill: red;
+  }
+
+  .offer-header {
+    padding-top: 0;
+  }
+
+
+  .totals {
+    padding-right: 25px;
+  }
+
+  .graph {
+    max-width: 96%;
+  }
+
+  .extra-links {
+    padding: 0 10px;
+  }
+
+  .totals {
+    justify-content: space-around;;
+    flex-wrap: wrap;
+    margin: 0 25px;
+  }
+
+  .circle-graph {
+    margin-bottom: 5px;
+  }
+
+
 
 }
