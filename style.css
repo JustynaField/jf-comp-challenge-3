@@ -748,7 +748,6 @@ th button:hover {
     flex-wrap: wrap;
     justify-content: space-around;;
     margin: 0 25px;
-    padding-right: 25px;
   }
 
   .graph {
@@ -756,7 +755,7 @@ th button:hover {
   }
 
   .circle-graph {
-    margin-bottom: 5px;
+    margin: 0 10px 5px 10px;
   }
 
   .column1 {
