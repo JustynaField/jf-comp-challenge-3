@@ -7,6 +7,9 @@ Creative license was given in regards to images, icons and copy.
 #### Original Comp:
 ![Original Comp](screenshots/original.png)
 
+#### Original Assignment: 
+![Turing Assignment](http://frontend.turing.io/projects/m1-static-comp-3.html)
+
 #### Link to my project:
 https://justynafield.github.io/jf-comp-challenge-3/
 
